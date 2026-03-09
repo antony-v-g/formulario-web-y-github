@@ -3,6 +3,50 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <h1 class="display-4">Registro GameJam</h1>
+
+    <form id="formGamejam">
+
+        <div>
+            <label>Nombre del jugador</label><br>
+            <input type="text" id="nombre" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Fecha de nacimiento</label><br>
+            <input type="date" id="fecha" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Hobbies</label><br>
+            <input type="text" id="hobbies" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Pago de matrícula</label><br>
+            <select id="pago">
+                <option value="no">No pagó</option>
+                <option value="si">Pagó</option>
+            </select>
+        </div>
+
+        <br>
+
+        <button type="button" onclick="verificarPago()">Registrar</button>
+
+    </form>
+
+    <br>
+
+    <h3 id="mensaje"></h3>
+
 </div>
+
+<script src="~/js/gamejam.js"></script>
